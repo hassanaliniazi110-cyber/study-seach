@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Penalty Master</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="game">
+
+    <header>
+      <h1>⚽ PENALTY MASTER</h1>
+
+      <div class="stats">
+        <span>⚽ Goals: <b id="score">0</b></span>
+        <span>🏆 Level: <b id="level">1</b></span>
+        <span>❤️ <b id="lives">3</b></span>
+      </div>
+    </header>
+
+    <div class="settings">
+
+      <label>
+        Difficulty:
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="normal" selected>Normal</option>
+          <option value="hard">Hard</option>
+        </select>
+      </label>
+
+      <button id="restart">Restart</button>
+
+    </div>
+
+    <div id="gameArea">
+
+      <div id="message">
+        TAP THE GOAL TO SHOOT!
+      </div>
+
+      <canvas id="canvas"></canvas>
+
+      <div id="shootButtons">
+
+        <button data-zone="left">LEFT</button>
+
+        <button data-zone="center">CENTER</button>
+
+        <button data-zone="right">RIGHT</button>
+
+      </div>
+
+    </div>
+
+    <div class="instructions">
+
+      🎯 Choose a corner and shoot!
+      <br>
+      Beat the goalkeeper to reach the next level.
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
