@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Arena</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="game">
+
+    <header>
+      <h1>⚽ FOOTBALL ARENA</h1>
+
+      <div class="score">
+        <span id="homeScore">0</span>
+        -
+        <span id="awayScore">0</span>
+      </div>
+
+      <div id="timer">01:30</div>
+    </header>
+
+    <div class="menu">
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="normal" selected>Normal</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <button id="pauseBtn">Pause</button>
+      <button id="restartBtn">Restart</button>
+    </div>
+
+    <div id="stadium">
+      <canvas id="pitch"></canvas>
+
+      <div id="message"></div>
+
+      <div class="controls">
+
+        <div id="joystick" class="joystick">
+          <div id="stick"></div>
+        </div>
+
+        <div class="actions">
+          <button id="passBtn">PASS</button>
+          <button id="shootBtn">SHOOT</button>
+          <button id="sprintBtn">SPRINT</button>
+        </div>
+
+      </div>
+    </div>
+
+    <p class="instructions">
+      WASD / Arrow Keys = Move &nbsp; • &nbsp;
+      Space = Shoot &nbsp; • &nbsp;
+      E = Pass &nbsp; • &nbsp;
+      Shift = Sprint
+    </p>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
